@@ -22,7 +22,7 @@ public class Main {
         System.out.println("=".repeat(55));
 
 
-        Student vancho = new ConcreteStudent("Ванчо (Вундеркинд)",
+        Student vancho = new ConcreteStudent("Ванчо - wunderkind",
                 StudentType.WUNDERKIND,
                 new RunningWithJumpsStrategy());
         vancho = new HyperFocusDecorator(vancho);
@@ -31,7 +31,7 @@ public class Main {
         uni.conductExam(vancho);
         System.out.println("=".repeat(30));
 
-        Student bobi = new ConcreteStudent("Боби - fitness lover",
+        Student bobi = new ConcreteStudent("Боби - fitness",
                 StudentType.FITNESS_FAN,
                 new TeleportationStrategy());
         bobi = new SpeedWritingDecorator(bobi);
@@ -40,7 +40,7 @@ public class Main {
         uni.conductExam(bobi);
         System.out.println("=".repeat(30));
 
-        Student peyo = new ConcreteStudent("Пейо - Калитко",
+        Student peyo = new ConcreteStudent("Пейо - lucky",
                 StudentType.LUCKY_ONE,
                 new BusSleepStrategy());
         peyo = new TelepathyDecorator(peyo);
@@ -50,7 +50,7 @@ public class Main {
         System.out.println("=".repeat(30));
 
         System.out.println("\nСтудент с 2 суперсило");
-        Student nadya = new ConcreteStudent("Надя (Вундеркинд)",
+        Student nadya = new ConcreteStudent("Надя - wunderkind",
                 StudentType.WUNDERKIND,
                 new TeleportationStrategy());
         nadya = new HyperFocusDecorator(nadya);
