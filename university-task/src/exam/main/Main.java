@@ -49,6 +49,14 @@ public class Main {
         uni.conductExam(peyo);
         System.out.println("=".repeat(30));
 
-        
+        System.out.println("\nСтудент с 2 суперсило");
+        Student nadya = new ConcreteStudent("Надя (Вундеркинд)",
+                StudentType.WUNDERKIND,
+                new TeleportationStrategy());
+        nadya = new HyperFocusDecorator(nadya);
+        nadya = new SpeedWritingDecorator(nadya);
+
+        nadya.arriveAtUniversity();
+        uni.conductExam(nadya);
     }
 }
